@@ -11,9 +11,9 @@ class ConsolasController extends Controller
         $marcas = array();
         $marcas[] = "Sony";
         $marcas[] = "Microsoft";
-        $marcas[] = "Nnintendo";
+        $marcas[] = "Nintendo";
         $marcas[] = "Sega";
-        
+
         return $marcas;
     }
 }
