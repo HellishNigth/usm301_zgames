@@ -5,7 +5,7 @@
         <div class="col-12 col-md-6 col-lg-5 mx-auto">
             <div class="card">
                 <div class="card-header bg-warning text-white">
-                    <span>Agragar Consola</span>
+                    <span>Agregar Consola</span>
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
@@ -17,10 +17,7 @@
                     <div class="mb-3">
                         <label for="marca-select" class="form-label">Marca</label>
                         <select class="form-select" id="marca-select">
-                            <option value="microsoft">Microsoft</option>
-                            <option value="sonny">Sony</option>
-                            <option value="nintendo">Nintendo</option>
-                            <option value="sega">Sega</option>
+                            
                         </select>
                     </div>
                     <div class="mb-3">
@@ -34,4 +31,7 @@
             </div>
 
     </div>
+@endsection
+@section("javascript")
+    <script src="{{asset('js/home.js')}}"></script>
 @endsection
