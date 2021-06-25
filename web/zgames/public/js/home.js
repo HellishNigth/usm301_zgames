@@ -1,4 +1,3 @@
-
 const cargarMarcas = async()=>{
     //1. Ir a buscar las marcas a la api
     let resultado = await axios.get("api/marcas/get");
@@ -13,3 +12,16 @@ const cargarMarcas = async()=>{
 };
 
 cargarMarcas();
+
+document.querySelector("#registrar-btn").addEventListener("click", async ()=>{
+    let nombre = document.querySelector("#nombre-txt").value;
+    let marca = document.querySelector("#marca-select").value;
+    let anio = document.querySelector("#anio-txt").value;
+    let consola = {};
+    consola.nombre = nombre;
+    consola.marca = marca;
+    consola.anio = anio;
+    console.log(consola);
+    let res = await crearConsola(consola);
+    Swal.fire("Consola creada","Consola creada existosamente","success");
+});
